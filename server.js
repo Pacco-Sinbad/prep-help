@@ -1,8 +1,8 @@
 const express = require('express')
 const app = express()
 const connectDB = require('./config/database')
-const homeRoutes = require('./routes/home') /////////////////////////////
-const recipesRoutes = require('./routes/recipes') /////////////////////////////
+const homeRoutes = require('./routes/home')
+const recipesRoutes = require('./routes/recipes') 
 
 require('dotenv').config({path: './config/.env'})
 
@@ -14,8 +14,8 @@ app.use(express.urlencoded({ extended: true }))
 app.use(express.json())
 
 app.use('/', homeRoutes)
-app.use('/todos', recipesRoutes)
+app.use('/recipes', recipesRoutes)
  
 app.listen(process.env.PORT, ()=>{
-    console.log(`Server is running on ${PORT}`)
+    console.log(`Server is running`)
 })    

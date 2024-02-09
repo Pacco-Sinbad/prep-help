@@ -4,4 +4,6 @@ const recipesController = require('../controllers/recipes')
 
 router.get('/', recipesController.getRecipes)
 
+router.post('/addNew', recipesController.addNewRecipe)
+
 module.exports = router

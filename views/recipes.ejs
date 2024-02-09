@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+  	<meta charset="utf-8">
+  	<meta name="description" content="Your description goes here">
+  	<meta name="keywords" content="one, two, three">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<title>Recipe Recorder</title>
+
+		<link rel="icon" type="image/x-icon" href="images/favicon.ico"><!--favicon-->
+
+	</head>
+	<body>
+        <header>
+            <h3>Recipe Recorder</h3>
+        </header>
+		<main>
+			<h2>Use the form below to record a recipe</h2>
+            <form action="/recipes/addNew" method="post">
+                <label for="name">Recipe Name</label>
+                <input type="text" name="title" id="name">
+                <label for="ingredients">Ingredient List</label>
+                <textarea name="ingredients" id="ingredients" cols="30" rows="10"></textarea>
+                <label for="calories">Calories per serving</label>
+                <input type="text" name="calories" id="calories">
+                <button>Submit</button>
+            </form>
+
+		</main>
+
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>
